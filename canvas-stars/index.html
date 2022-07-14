@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Javascript Canvas Stars</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-box {
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .main-box .star {
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        .star1{
+            background-color: red;
+        }
+
+        .star2{
+            background-color: blue;
+        }
+
+        .star3{
+            background-color: green;
+        }
+
+        .star4{
+            background-color: yellow;
+        }
+
+        .star5{
+            background-color: black;
+        }
+
+        .star-colored-box {
+            width: 600px;
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+             <canvas id="canvas1"></canvas>
+            <canvas id="canvas2"></canvas>
+         -->
+
+
+    <div class="main-box" onclick="fillBox('white')">
+        <div onclick="fillBox('red')"  class="star1 star"></div>  
+        <div onclick="fillBox('blue')"  class="star2 star"></div>  
+        <div onclick="fillBox('green')"  class="star3 star"></div> 
+        <div onclick="fillBox('yellow')"  class="star4 star"></div>  
+        <div onclick="fillBox('black')"  class="star5 star"></div>  
+    </div>
+    <div class="star-colored-box"></div>
+    <p>Привет! Скажу честно, эта задача для меня была очень сложной, я искал в Интернете, я спросил у знакомого программиста, я искал, но не очень легко было сделать именно то, что просили в задаче, короче, я не смог выполнить задачу . Но я написал свой ответ по-другому, потому что мне было стыдно сказать вам, что я просто не мог этого сделать. Я знаю, что задание не выполнено, но я прошу вас дать мне шанс, проявить себя, улучшить свои знания, узнать что-то новое и я обещаю, что буду стараться изо всех сил после того, как получу порученную мне работу. чтобы оправдать доверие. У меня много недостатков, даже сейчас я пользуюсь гугл-переводчиком. Но дайте ему один шанс, пожалуйста    </p>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
